@@ -29,15 +29,6 @@ h1{
     text-align: center;
     margin: 0;
     padding: 0;
-    animation: bounce 1s infinite;
-}
-@keyframes bounce{
-    from {
-        margin-top: 0;
-    }
-    to {
-        margin-top: 10px;
-    }
 }
 p{
     padding: 20px;
