@@ -1,0 +1,80 @@
+body, html{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: ghostwhite;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/aa/A_painting_from_the_Mahabharata_Balabhadra_fighting_Jarasandha.jpg');
+    background-size: cover;
+}
+.chicken,.idli,.sushi{
+    color: white;
+    width: 400px;
+    height: 40%;
+    background-color: orange;
+    margin-top: -200px;
+    border-radius: 8px;
+    box-shadow: 0px 6px 0px 1px darkorange, 1px 1px 10px 5px black;
+}
+h1{
+    text-shadow: 0px 3px 0px ghostwhite, 1px 1px 10px black;
+    color: white;
+    font-size: 72px;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    animation: bounce 1s infinite;
+}
+@keyframes bounce{
+    from {
+        margin-top: 0;
+    }
+    to {
+        margin-top: 10px;
+    }
+}
+p{
+    padding: 20px;
+    margin-top: 50px;
+}
+span{
+    color: black;
+    background-color: ghostwhite;
+    float: right;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0px 6px 0px 1px darkorange;
+}
+span:hover{
+    box-shadow: 0px 2px 0px 1px lightgray;
+    transform: scale(0.9);
+    transition: 0.1s ease;
+}
+@media (min-width: 992px) and (max-width: 1224px){
+    .chicken,.idli,.sushi{
+        width: 330px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .chicken,.idli,.sushi{
+        margin-top: 20px;
+    }
+    .sushi{
+        width: 80vw;
+    }
+    .chicken,.idli{
+        width: 42%;
+    }
+}
+@media (max-width: 768px){
+    .chicken,.idli,.sushi{
+        margin-top: 20px;
+        width: 330px;
+    }
+}
